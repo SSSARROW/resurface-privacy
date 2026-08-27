@@ -299,10 +299,10 @@
       <div class="section-num">01</div>
       <h2>Overview</h2>
       <p>Resurface is a save-things app: screenshots, links, and quick notes go in, and a plain-language summary comes back out later, at a time chosen to actually be useful instead of buried and forgotten.</p>
-      <p>This policy covers the Resurface Android app and the backend service it talks to. It's written in plain language on purpose &mdash; if something here is unclear, the contact section at the bottom is a real inbox, not a formality.</p>
+      <p>This policy covers the Resurface Android app and the backend service it talks to. It's written in plain language on purpose: if something here is unclear, the contact section at the bottom is a real inbox, not a formality.</p>
       <div class="callout">
-        <span class="glyph">&mdash;</span>
-        <p>The short version: your saves get processed to build a summary, that processing involves a small number of named third-party services, nothing is sold or shown ads against, and you can delete any of it &mdash; including your whole account &mdash; from inside the app at any time.</p>
+        <span class="glyph">&bull;</span>
+        <p>The short version: your saves get processed to build a summary, that processing involves a small number of named third-party services, nothing is sold or shown ads against, and you can delete any of it, including your whole account, from inside the app at any time.</p>
       </div>
     </section>
 
@@ -311,13 +311,13 @@
       <h2>What we collect</h2>
 
       <h3>Account information</h3>
-      <p>Signing in uses Supabase Auth, a third-party identity provider. Creating an account collects your email address and a securely hashed password (or, if you use "Continue with Google," the account info Google provides for sign-in). We never see or store your password in readable form &mdash; Supabase handles that.</p>
+      <p>Signing in uses Supabase Auth, a third-party identity provider. Creating an account collects your email address and a securely hashed password (or, if you use "Continue with Google," the account info Google provides for sign-in). We never see or store your password in readable form; Supabase handles that.</p>
 
       <h3>Content you save</h3>
-      <p>Whatever you actually save: screenshots and photos you capture or attach, links you paste, and any note you type or dictate. If you use voice input, speech-to-text conversion happens through your device's own speech recognition &mdash; the audio itself isn't sent to Resurface's servers, only the resulting text.</p>
+      <p>Whatever you actually save: screenshots and photos you capture or attach, links you paste, and any note you type or dictate. If you use voice input, speech-to-text conversion happens through your device's own speech recognition; the audio itself isn't sent to Resurface's servers, only the resulting text.</p>
 
       <h3>Automatically collected</h3>
-      <p>A push-notification token (so we can send you a resurfacing reminder or a weekly recap) and a device identifier used solely to route pushes to the right device &mdash; not for tracking, profiling, or advertising.</p>
+      <p>A push-notification token (so we can send you a resurfacing reminder or a weekly recap) and a device identifier used solely to route pushes to the right device, not for tracking, profiling, or advertising.</p>
     </section>
 
     <section id="use">
@@ -327,10 +327,10 @@
         <li><strong>Digesting.</strong> Screenshots, links, and notes are sent to a third-party AI provider to generate the summary, key points, and verdict you see for that item.</li>
         <li><strong>Enrichment.</strong> When relevant, a short search query (not your raw content) is sent to YouTube, TMDB, or Brave Search to surface a real related video, streaming link, or article.</li>
         <li><strong>Resurfacing.</strong> Content and your reactions to it (Done / Remind me later / Dead) determine when we send a push reminder or include something in your weekly recap.</li>
-        <li><strong>Keeping the app working.</strong> Account identifiers and device tokens are used to authenticate requests and deliver push notifications &mdash; nothing more.</li>
+        <li><strong>Keeping the app working.</strong> Account identifiers and device tokens are used to authenticate requests and deliver push notifications, nothing more.</li>
       </ul>
       <div class="callout">
-        <span class="glyph">&mdash;</span>
+        <span class="glyph">&bull;</span>
         <p>We don't run ads, we don't have an ad SDK in the app, and we don't sell or rent your data to anyone, for any reason.</p>
       </div>
     </section>
@@ -353,7 +353,7 @@
           </tbody>
         </table>
       </div>
-      <p>Each of these is a data <em>processor</em> acting on our instructions, not an independent owner of your data &mdash; they're bound by their own privacy terms, which govern how they handle anything passed to them.</p>
+      <p>Each of these is a data <em>processor</em> acting on our instructions, not an independent owner of your data; they're bound by their own privacy terms, which govern how they handle anything passed to them.</p>
     </section>
 
     <section id="retention">
@@ -361,11 +361,11 @@
       <h2>How long we keep it</h2>
       <p>Retention is different for a saved screenshot's <em>image</em> versus its <em>summary</em>, on purpose.</p>
       <h3>Screenshots without a note</h3>
-      <p>If you don't attach a note to a screenshot, the image itself is automatically deleted after a period you control (45 days by default, adjustable in Settings). You get two heads-up notifications before it happens, and a review screen where you can keep it &mdash; which resets the clock rather than keeping it forever, since the only thing that keeps something permanently is attaching a note to it.</p>
+      <p>If you don't attach a note to a screenshot, the image itself is automatically deleted after a period you control (45 days by default, adjustable in Settings). You get two heads-up notifications before it happens, and a review screen where you can keep it, which resets the clock rather than keeping it forever, since the only thing that keeps something permanently is attaching a note to it.</p>
       <h3>Everything else</h3>
       <p>A digest's summary, verdict, and key points are kept until you delete that item yourself. Anything with a note attached to it is never auto-deleted.</p>
       <h3>Deleting your account</h3>
-      <p>Deleting your account in-app is immediate and permanent: every capture, every image, your push registration, and your Supabase identity itself are all removed. There's no recovery window and no soft-delete &mdash; once it's done, it's done.</p>
+      <p>Deleting your account in-app is immediate and permanent: every capture, every image, your push registration, and your Supabase identity itself are all removed. There's no recovery window and no soft-delete. Once it's done, it's done.</p>
     </section>
 
     <section id="controls">
@@ -377,14 +377,14 @@
         <li><span class="pill">Any item</span> Delete a single capture, or add a note to keep its image indefinitely.</li>
         <li><span class="pill">Account</span> Delete your entire account and all associated data from inside the app, anytime.</li>
       </ul>
-      <p>None of these require contacting us first &mdash; they're built into the app itself.</p>
+      <p>None of these require contacting us first; they're built into the app itself.</p>
     </section>
 
     <section id="security">
       <div class="section-num">07</div>
       <h2>Security</h2>
-      <p>All traffic between the app and our backend is encrypted (HTTPS/TLS). Every request is authenticated, access to your data is scoped strictly to your own account, and the backend is hardened against common abuse patterns &mdash; rate limits on account creation, validated uploads, and no third-party ad or analytics trackers embedded in the app.</p>
-      <p>No system is perfectly secure, and we can't guarantee absolute security &mdash; but we treat your saved content as something worth actually protecting, not an afterthought.</p>
+      <p>All traffic between the app and our backend is encrypted (HTTPS/TLS). Every request is authenticated, access to your data is scoped strictly to your own account, and the backend is hardened against common abuse patterns: rate limits on account creation, validated uploads, and no third-party ad or analytics trackers embedded in the app.</p>
+      <p>No system is perfectly secure, and we can't guarantee absolute security, but we treat your saved content as something worth actually protecting, not an afterthought.</p>
     </section>
 
     <section id="children">
